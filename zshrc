@@ -52,4 +52,3 @@ alias biz="cd ~/shire/trunk/biz"
 alias ls="ls -a"
 alias rs="dae serve -p 19944"
 
-source ~/.profile
