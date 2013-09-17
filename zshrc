@@ -52,3 +52,5 @@ alias biz="cd ~/shire/trunk/biz"
 alias ls="ls -a"
 alias rs="dae serve -p 19944"
 
+alias theoden="ssh theoden"
+alias dev2="ssh dev2"
