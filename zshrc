@@ -54,3 +54,5 @@ alias rs="dae serve -p 19944"
 
 export PATH="$PATH:$HOME/bin"
 
+alias theoden="ssh theoden"
+alias dev2="ssh dev2"
