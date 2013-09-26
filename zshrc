@@ -56,3 +56,6 @@ export PATH="$PATH:$HOME/bin"
 
 alias theoden="ssh theoden"
 alias dev2="ssh dev2"
+
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
