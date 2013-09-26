@@ -56,3 +56,5 @@ export PATH="$PATH:$HOME/bin"
 
 alias theoden="ssh theoden"
 alias dev2="ssh dev2"
+
+alias biz_dev="cd ~/shire/branches/shibingwen/biz"
