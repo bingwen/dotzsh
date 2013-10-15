@@ -54,8 +54,11 @@ alias rs="dae serve -p 19944"
 
 export PATH="$PATH:$HOME/bin"
 
-alias theoden="ssh theoden"
+alias theoden="ssh theoden-new"
 alias dev2="ssh dev2"
+alias fili="ssh fili"
+alias linode="ssh linode"
+alias moon="ssh moon"
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
