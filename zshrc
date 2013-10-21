@@ -49,6 +49,7 @@ if [[ $- != *i* ]] ; then
 fi
 alias shire="cd ~/shire/trunk"
 alias biz="cd ~/shire/trunk/biz"
+alias fm="cd ~/shire/trunk/fm"
 alias ls="ls -a"
 alias rs="dae serve -p 19944"
 
