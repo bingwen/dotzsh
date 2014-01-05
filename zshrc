@@ -47,8 +47,9 @@ if [[ $- != *i* ]] ; then
     # Shell is non-interactive.  Be done now!
     return
 fi
-alias shire="cd ~/shire/trunk"
-alias biz="cd ~/shire/trunk/biz"
+alias shire="cd ~/shire/"
+alias biz="cd ~/shire/biz"
+alias fm="cd ~/shire/fm"
 
 export PATH="$PATH:$HOME/bin"
 
@@ -58,6 +59,9 @@ alias fili="ssh fili"
 alias linode="ssh linode"
 alias moon="ssh moon"
 
+alias demo="tmux a -t demo"
+alias demo2="tmux a -t demo2"
+
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
@@ -65,3 +69,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxexexabagacad
+TERM=xterm
