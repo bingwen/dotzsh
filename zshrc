@@ -47,21 +47,22 @@ if [[ $- != *i* ]] ; then
     # Shell is non-interactive.  Be done now!
     return
 fi
-alias shire="cd ~/shire/trunk"
-alias biz="cd ~/shire/trunk/biz"
-alias fm="cd ~/shire/trunk/fm"
 alias ls="ls -a"
 alias mfs="cd /mfs/user/shibingwen/"
+alias shire="cd ~/shire/"
+alias biz="cd ~/shire/biz"
+alias fm="cd ~/shire/fm"
 
 export PATH="$PATH:$HOME/bin"
 
-alias theoden="ssh theoden-new"
+alias theoden="ssh theoden"
 alias dev2="ssh dev2"
 alias fili="ssh fili"
 alias linode="ssh linode"
 alias moon="ssh moon"
 
 alias demo="tmux a -t demo"
+alias demo2="tmux a -t demo2"
 
 
 alias bm1="mongo biz --host biz-mongo1 -u biz -p biz77net --port 13000"
@@ -75,6 +76,10 @@ alias audit_mongo="mongo audit-mongo1:14001/audit -uaudit -pXx5JEvCg"
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export CLICOLOR=1
+export LSCOLORS=exfxcxdxbxexexabagacad
 TERM=xterm
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
