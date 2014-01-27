@@ -40,7 +40,7 @@ ZSH_THEME="ys"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(pre git svn)
 
 source $ZSH/oh-my-zsh.sh
 if [[ $- != *i* ]] ; then
@@ -51,7 +51,7 @@ alias shire="cd ~/shire/trunk"
 alias biz="cd ~/shire/trunk/biz"
 alias fm="cd ~/shire/trunk/fm"
 alias ls="ls -a"
-alias rs="dae serve -p 19944"
+alias mfs="cd /mfs/user/shibingwen/"
 
 export PATH="$PATH:$HOME/bin"
 
@@ -63,7 +63,18 @@ alias moon="ssh moon"
 
 alias demo="tmux a -t demo"
 
+
+alias bm1="mongo biz --host biz-mongo1 -u biz -p biz77net --port 13000"
+alias bm2="mongo biz --host biz-mongo2 -u biz -p biz77net --port 13000"
+alias bm3="mongo biz --host biz-mongo3 -u biz -p biz77net --port 13000"
+alias bizmongo="mongo biz --host biz-mongo1 -u biz -p biz77net --port 13000"
+alias bizmongos="mongo biz_sandbox --host biz-mongo1 -u biz -p biz77net --port 13000"
+alias alg_mongo="mongo alg_mongo1:14000/drogo -udrogo -pdrogoeye"
+alias audit_mongo="mongo audit-mongo1:14001/audit -uaudit -pXx5JEvCg"
+
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 TERM=xterm
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
