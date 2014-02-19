@@ -3,7 +3,7 @@ ZSH=$HOME/.zsh/oh-my-zsh
 # Set name of the theme to load.
 ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(pre git svn)
+plugins=(pre git brew python)
 
 source $ZSH/oh-my-zsh.sh
 if [[ $- != *i* ]] ; then
@@ -43,5 +43,4 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export CLICOLOR=1
-export LSCOLORS=exfxcxdxbxexexabagacad
 TERM=xterm
