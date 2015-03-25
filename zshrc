@@ -11,7 +11,7 @@ if [[ $- != *i* ]] ; then
     return
 fi
 
-alias ls="ls -a"
+#alias ls="ls -a"
 
 # Ruby RVM
 export PATH="$PATH:$HOME/bin"
@@ -22,6 +22,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Hub
+eval "$(hub alias -s)"
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
