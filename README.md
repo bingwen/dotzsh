@@ -11,7 +11,8 @@ install:
 
 create symlink:
 
-    ln -s ~/.zsh/zshrc ~/.zshrc
+    ln -s ~/.zsh/.zshrc ~/.zshrc
+    ln -s ~/.zsh/.gitconfig ~/.gitconfig
 
 fetch submodules:
 

@@ -11,11 +11,13 @@ if [[ $- != *i* ]] ; then
     return
 fi
 
-#alias ls="ls -a"
-
 # Ruby RVM
 export PATH="$PATH:$HOME/bin"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Node NVM
+export NVM_DIR="/root/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -23,8 +25,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# Hub
-eval "$(hub alias -s)"
+# alias
+alias ack="ack-grep"
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8

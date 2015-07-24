@@ -1,0 +1,17 @@
+[user]
+     name = bingwen
+     email = bingwen.2048@gmail.com
+[alias]
+     co = checkout
+     ci = commit -a
+     st = status -sb
+     br = branch
+[color]
+     diff = true
+     status = true
+     branch = true
+     ui = true
+[core]
+     editor = vim
+[push]
+     default = matching
