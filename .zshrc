@@ -25,11 +25,16 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# qingcloud cli
+export PYTHONPATH=/pitrix/lib/pitrix-common/:/pitrix/lib/pitrix-cli/:$PYTHONPATH
+
 # alias
 alias ack="ack-grep"
 
+export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export CLICOLOR=1
 TERM=xterm
+export PATH="/usr/local/sbin:$PATH"
