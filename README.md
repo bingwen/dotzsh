@@ -13,6 +13,7 @@ create symlink:
 
     ln -s ~/.zsh/.zshrc ~/.zshrc
     ln -s ~/.zsh/.gitconfig ~/.gitconfig
+    ln -s ~/.zsh/.hyperterm.js ~/.hyperterm.js
 
 fetch submodules:
 
