@@ -3,7 +3,7 @@ ZSH=$HOME/.zsh/oh-my-zsh
 # Set name of the theme to load.
 ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(pre git brew python)
+plugins=(pre git brew python docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 if [[ $- != *i* ]] ; then
@@ -25,11 +25,18 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# go
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin
+
 # qingcloud cli
 export PYTHONPATH=/pitrix/lib/pitrix-common/:/pitrix/lib/pitrix-cli/:$PYTHONPATH
 
 # alias
 alias ack="ack-grep"
+alias vi="vim"
+alias drm="docker rm $(docker ps -q -f status=exited)"
+alias drmi="docker rmi $(docker images -f 'dangling=true' -q)"
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
