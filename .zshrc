@@ -3,7 +3,7 @@ ZSH=$HOME/.zsh/oh-my-zsh
 # Set name of the theme to load.
 ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(pre git brew python docker docker-compose)
+plugins=(pre git python docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 if [[ $- != *i* ]] ; then
