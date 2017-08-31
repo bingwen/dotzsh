@@ -3,7 +3,8 @@ ZSH=$HOME/.zsh/oh-my-zsh
 # Set name of the theme to load.
 ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(pre git python docker docker-compose)
+#plugins=(pre git python docker docker-compose)
+plugins=(pre git) 
 
 source $ZSH/oh-my-zsh.sh
 if [[ $- != *i* ]] ; then
@@ -47,8 +48,8 @@ alias qnpm="npm --registry=http://r.npm.internal.yunify.com/ \
 alias ack="ack-grep"
 
 # docker
-alias drm="docker rm $(docker ps -q -f status=exited)"
-alias drmi="docker rmi $(docker images -f 'dangling=true' -q)"
+#alias drm="docker rm $(docker ps -q -f status=exited)"
+#alias drmi="docker rmi $(docker images -f 'dangling=true' -q)"
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
