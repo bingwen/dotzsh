@@ -41,5 +41,3 @@ TERM=xterm
 
 # MacOS Brew Path
 export PATH="/usr/local/sbin:$PATH"
-# iTerm2
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

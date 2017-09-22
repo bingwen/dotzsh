@@ -1,19 +1,21 @@
 [user]
-     name = bingwen
-     email = bingwen.2048@gmail.com
+    name = bingwen
+    email = bingwen.2048@gmail.com
 [alias]
-     co = checkout
-     ci = commit -a
-     st = status -sb
-     br = branch
+    co = checkout
+    ci = commit -a
+    st = status -sb
+    br = branch
 [color]
-     diff = true
-     status = true
-     branch = true
-     ui = true
+    diff = true
+    status = true
+    branch = true
+    ui = true
 [core]
-     editor = vim
+    editor = vim
 [push]
-     default = matching
+    default = current
+[pull]
+    default = current
 [http]
-     sslVerify = false
+    sslVerify = false
