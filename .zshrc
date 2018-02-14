@@ -26,11 +26,14 @@ export NVM_DIR="$HOME/.nvm"
 # eval "$(pyenv virtualenv-init -)"
 
 # go
-export GOPATH=~/go
-export PATH=$PATH:~/go/bin
+export GOPATH=/sbw/go
+export PATH=$PATH:/sbw/go/bin
 
 # alias
 alias ack="ack-grep"
+
+# proxy
+alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080" alias unsetproxy="unset ALL_PROXY"
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
@@ -41,3 +44,4 @@ TERM=xterm
 
 # MacOS Brew Path
 export PATH="/usr/local/sbin:$PATH"
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
