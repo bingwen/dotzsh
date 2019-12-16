@@ -1,10 +1,11 @@
-# Path to your oh-my-zsh configuration.
 if [[ $- != *i* ]] ; then
     # Shell is non-interactive.  Be done now!
     return
 fi
 
+# Path to your oh-my-zsh configuration.
 ZSH=$HOME/.zsh/oh-my-zsh
+# Set name of the theme to load.
 ZSH_THEME="ys"
 plugins=(pre git)
 source $ZSH/oh-my-zsh.sh
@@ -15,7 +16,6 @@ export LC_ALL=en_US.UTF-8
 export CLICOLOR=1
 TERM=xterm
 
-
 # Ruby RVM
 export PATH="$PATH:$HOME/bin"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -23,6 +23,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Node NVM
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+
+export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
+export PHANTOMJS_CDNURL=https://npm.taobao.org/mirrors/phantomjs/
 
 # python
 # export PYENV_ROOT="$HOME/.pyenv"
